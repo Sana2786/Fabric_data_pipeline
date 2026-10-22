@@ -1,0 +1,6 @@
+course_id,course_name,department,instructor,term,credits
+C001,Data Engineering Fundamentals,Computer Science,Dr. Ayesha Khan,Fall 2026,3
+C002,Machine Learning I,Computer Science,Dr. Layla Haddad,Fall 2026,3
+C003,Statistics for Analytics,Mathematics,Prof. Marco Rossi,Fall 2026,4
+C004,Cloud Architecture on Azure,Information Systems,Dr. Priya Nair,Fall 2026,3
+C005,Business Intelligence & Visualisation,Business,Prof. Daniel Okafor,Fall 2026,3

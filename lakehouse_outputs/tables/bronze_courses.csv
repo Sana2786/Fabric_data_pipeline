@@ -1,0 +1,7 @@
+course_id,course_name,department,instructor,term,credits,_source_file,_ingested_at,_batch_id
+C001,Data Engineering Fundamentals,Computer Science,Dr. Ayesha Khan,Fall 2026,3,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572
+C002,Machine Learning I,Computer Science,Dr. Layla Haddad,Fall 2026,3,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572
+C003,  Statistics for Analytics  ,Mathematics,Prof. Marco Rossi,Fall 2026,4,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572
+C004,Cloud Architecture on Azure,Information Systems,Dr. Priya Nair,Fall 2026,3,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572
+C005,Business Intelligence & Visualisation,Business,Prof. Daniel Okafor,Fall 2026,3,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572
+C004,Cloud Architecture on Azure,Information Systems,Dr. Priya Nair,Fall 2026,3,courses.csv,2026-10-22 19:54:05.984197,844eab6c8572

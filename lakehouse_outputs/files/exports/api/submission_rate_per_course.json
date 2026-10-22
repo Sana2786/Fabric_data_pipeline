@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "message": "Submission rate for 5 course(s) as of 2026-10-15",
+  "data": [
+    {
+      "course_id": "C004",
+      "course_name": "Cloud Architecture on Azure",
+      "enrolled_students": 31,
+      "assignments_due": 2,
+      "expected_submissions": 62,
+      "actual_submissions": 53,
+      "submission_rate_pct": 85.48,
+      "on_time_rate_pct": 77.42
+    },
+    {
+      "course_id": "C003",
+      "course_name": "Statistics for Analytics",
+      "enrolled_students": 29,
+      "assignments_due": 2,
+      "expected_submissions": 58,
+      "actual_submissions": 49,
+      "submission_rate_pct": 84.48,
+      "on_time_rate_pct": 74.14
+    },
+    {
+      "course_id": "C002",
+      "course_name": "Machine Learning I",
+      "enrolled_students": 25,
+      "assignments_due": 2,
+      "expected_submissions": 50,
+      "actual_submissions": 41,
+      "submission_rate_pct": 82.0,
+      "on_time_rate_pct": 66.0
+    },
+    {
+      "course_id": "C001",
+      "course_name": "Data Engineering Fundamentals",
+      "enrolled_students": 38,
+      "assignments_due": 2,
+      "expected_submissions": 76,
+      "actual_submissions": 56,
+      "submission_rate_pct": 73.68,
+      "on_time_rate_pct": 59.21
+    },
+    {
+      "course_id": "C005",
+      "course_name": "Business Intelligence & Visualisation",
+      "enrolled_students": 29,
+      "assignments_due": 1,
+      "expected_submissions": 29,
+      "actual_submissions": 19,
+      "submission_rate_pct": 65.52,
+      "on_time_rate_pct": 51.72
+    }
+  ]
+}

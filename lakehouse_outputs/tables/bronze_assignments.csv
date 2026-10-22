@@ -1,0 +1,17 @@
+assignment_id,course_id,title,due_date,max_score,_source_file,_ingested_at,_batch_id
+Assignment_101,C001,Lab 1,2026-09-20 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_102,C001,Project Milestone 2,2026-10-04 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_103,C001,Final Project 3,2026-10-25 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_201,C002,Lab 1,2026-09-23 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_202,C002,Project Milestone 2,2026/10/07 23:59,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_203,C002,Final Project 3,2026-10-28 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_301,C003,Lab 1,2026-09-26 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_302,C003,Project Milestone 2,2026-10-10 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_303,C003,Final Project 3,2026-10-31 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_401,C004,Lab 1,2026-09-29 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_402,C004,Project Milestone 2,2026-10-13 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_403,C004,Final Project 3,2026-11-03 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_501,C005,Lab 1,2026-10-02 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_502,C005,Project Milestone 2,2026-10-16 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_503,C005,Final Project 3,2026-11-06 23:59:00,100,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572
+Assignment_901,C999,Legacy Quiz,2026-09-30 23:59:00,50,assignments.csv,2026-10-22 19:54:14.767643,844eab6c8572

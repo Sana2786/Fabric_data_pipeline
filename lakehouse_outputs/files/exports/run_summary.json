@@ -1,0 +1,223 @@
+{
+  "started_at": "2026-10-22T19:54:04.648747+00:00",
+  "as_of_date": "2026-10-15",
+  "environment": "fabric",
+  "steps": {
+    "generate": {
+      "status": "success",
+      "seconds": 0.33,
+      "result": {
+        "courses": [
+          "/lakehouse/default/Files/landing/courses.csv",
+          6
+        ],
+        "assignments": [
+          "/lakehouse/default/Files/landing/assignments.csv",
+          16
+        ],
+        "students": [
+          "/lakehouse/default/Files/landing/students.json",
+          61
+        ],
+        "submissions": [
+          "/lakehouse/default/Files/landing/submissions.json",
+          314
+        ]
+      }
+    },
+    "bronze": {
+      "status": "success",
+      "seconds": 33.37,
+      "result": {
+        "bronze_courses": 6,
+        "bronze_assignments": 16,
+        "bronze_students": 61,
+        "bronze_submissions": 314
+      }
+    },
+    "silver": {
+      "status": "success",
+      "seconds": 58.59,
+      "result": {
+        "silver_courses": 5,
+        "silver_students": 60,
+        "silver_enrollments": 152,
+        "silver_assignments": 15,
+        "silver_submissions": 279,
+        "silver_quarantine": 5,
+        "silver_student_assignment_status": 456
+      }
+    },
+    "gold": {
+      "status": "success",
+      "seconds": 25.13,
+      "result": {
+        "gold_course_submission_rate": 5,
+        "gold_student_overdue_metrics": 60,
+        "gold_assignment_summary": 15
+      }
+    },
+    "quality": {
+      "status": "success",
+      "seconds": 9.55,
+      "result": [
+        {
+          "check": "non_empty_bronze_students",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_bronze_courses",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_bronze_assignments",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_bronze_submissions",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_students",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_courses",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_assignments",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_submissions",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_enrollments",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_silver_student_assignment_status",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_gold_course_submission_rate",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_gold_student_overdue_metrics",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "non_empty_gold_assignment_summary",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "pk_silver_students",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "pk_silver_courses",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "pk_silver_assignments",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "pk_silver_submissions",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "pk_status",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "nn_submission_keys",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "fk_enrollment_student",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "fk_submission_assignment",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "rate_between_0_100",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "score_in_range",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "overdue_not_negative",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "every_student_in_gold",
+          "passed": true,
+          "failing_rows": 0
+        },
+        {
+          "check": "submissions_reconcile",
+          "passed": true,
+          "failing_rows": 0
+        }
+      ]
+    },
+    "governance": {
+      "status": "success",
+      "seconds": 30.33,
+      "result": {
+        "tables_tagged": 15
+      }
+    },
+    "export": {
+      "status": "success",
+      "seconds": 4.2,
+      "result": {
+        "api": [
+          "students_not_submitted_assignment_101",
+          "submission_rate_per_course",
+          "overdue_count_per_student"
+        ],
+        "gold_csv": [
+          "/lakehouse/default/Files/exports/gold/gold_course_submission_rate.csv",
+          "/lakehouse/default/Files/exports/gold/gold_student_overdue_metrics.csv",
+          "/lakehouse/default/Files/exports/gold/gold_assignment_summary.csv",
+          "/lakehouse/default/Files/exports/gold/gold_dim_student.csv"
+        ]
+      }
+    }
+  },
+  "status": "success",
+  "finished_at": "2026-10-22T19:56:46.155286+00:00"
+}

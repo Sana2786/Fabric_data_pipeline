@@ -1,0 +1,6 @@
+entity,record_key,reject_reason,raw_record,quarantined_at
+submissions,SUB00021,INVALID_TIMESTAMP,"{""student_id"":""S0030"",""course_id"":""C001"",""assignment_id"":""Assignment_101"",""submission_id"":""SUB00021"",""raw_score"":60.0,""channel"":""mobile"",""max_score"":100}",2026-10-22 19:55:19.165366
+submissions,SUB00311,UNKNOWN_STUDENT,"{""student_id"":""S9999"",""course_id"":""C001"",""assignment_id"":""Assignment_102"",""submission_id"":""SUB00311"",""submitted_at"":""2026-10-01T10:00:00.000Z"",""raw_score"":88.0,""channel"":""lms_api"",""max_score"":100}",2026-10-22 19:55:19.165366
+submissions,SUB00312,UNKNOWN_ASSIGNMENT,"{""student_id"":""S0002"",""assignment_id"":""Assignment_999"",""submission_id"":""SUB00312"",""submitted_at"":""2026-10-01T10:00:00.000Z"",""raw_score"":70.0,""channel"":""mobile""}",2026-10-22 19:55:19.165366
+submissions,SUB00313,NOT_ENROLLED,"{""student_id"":""S0001"",""course_id"":""C005"",""assignment_id"":""Assignment_501"",""submission_id"":""SUB00313"",""submitted_at"":""2026-09-30T09:00:00.000Z"",""raw_score"":90.0,""channel"":""mobile"",""max_score"":100}",2026-10-22 19:55:19.165366
+assignments,Assignment_901,UNKNOWN_COURSE,"{""course_id"":""C999"",""assignment_id"":""Assignment_901"",""title"":""Legacy Quiz"",""due_at"":""2026-09-30T23:59:00.000Z"",""max_score"":50}",2026-10-22 19:55:19.165366

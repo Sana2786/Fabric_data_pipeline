@@ -1,0 +1,842 @@
+[
+  {
+    "table": "bronze_students",
+    "layer": "bronze",
+    "sensitivity": "Highly Confidential",
+    "pii_columns": "email,phone,date_of_birth,first_name,last_name",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 61,
+    "columns": [
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "last_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "date_of_birth",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "enrollment_date",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "enrolled_courses",
+        "type": "array<string>",
+        "pii": false
+      },
+      {
+        "name": "updated_at",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_source_file",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_ingested_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "_batch_id",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "bronze_courses",
+    "layer": "bronze",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 6,
+    "columns": [
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_name",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "department",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "instructor",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "term",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "credits",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_source_file",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_ingested_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "_batch_id",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "bronze_assignments",
+    "layer": "bronze",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 16,
+    "columns": [
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "due_date",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "max_score",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_source_file",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_ingested_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "_batch_id",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "bronze_submissions",
+    "layer": "bronze",
+    "sensitivity": "Confidential",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 314,
+    "columns": [
+      {
+        "name": "submission_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "submitted_at",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "score",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "channel",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_source_file",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_ingested_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "_batch_id",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_students",
+    "layer": "silver",
+    "sensitivity": "Highly Confidential",
+    "pii_columns": "email,phone,date_of_birth,first_name,last_name",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 60,
+    "columns": [
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "last_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "date_of_birth",
+        "type": "date",
+        "pii": true
+      },
+      {
+        "name": "enrollment_date",
+        "type": "date",
+        "pii": false
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_courses",
+    "layer": "silver",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 5,
+    "columns": [
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_name",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "department",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "instructor",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "term",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "credits",
+        "type": "int",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_enrollments",
+    "layer": "silver",
+    "sensitivity": "Confidential",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 152,
+    "columns": [
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_assignments",
+    "layer": "silver",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 15,
+    "columns": [
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "due_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "max_score",
+        "type": "int",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_submissions",
+    "layer": "silver",
+    "sensitivity": "Confidential",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 279,
+    "columns": [
+      {
+        "name": "submission_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_submitted_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "last_submitted_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "attempt_count",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "score",
+        "type": "double",
+        "pii": false
+      },
+      {
+        "name": "score_valid",
+        "type": "boolean",
+        "pii": false
+      },
+      {
+        "name": "channel",
+        "type": "string",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_student_assignment_status",
+    "layer": "silver",
+    "sensitivity": "Confidential",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 456,
+    "columns": [
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "due_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "submission_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_submitted_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "last_submitted_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "attempt_count",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "score",
+        "type": "double",
+        "pii": false
+      },
+      {
+        "name": "is_due",
+        "type": "boolean",
+        "pii": false
+      },
+      {
+        "name": "is_submitted",
+        "type": "boolean",
+        "pii": false
+      },
+      {
+        "name": "is_late",
+        "type": "boolean",
+        "pii": false
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "days_overdue",
+        "type": "int",
+        "pii": false
+      },
+      {
+        "name": "as_of_date",
+        "type": "date",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "silver_quarantine",
+    "layer": "silver",
+    "sensitivity": "Highly Confidential",
+    "pii_columns": "raw_record",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 5,
+    "columns": [
+      {
+        "name": "entity",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "record_key",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "reject_reason",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "raw_record",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "quarantined_at",
+        "type": "timestamp",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "gold_course_submission_rate",
+    "layer": "gold",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 5,
+    "columns": [
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_name",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "department",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "instructor",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "enrolled_students",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "assignments_due",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "expected_submissions",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "actual_submissions",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "on_time_submissions",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "late_submissions",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "missing_submissions",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "avg_score",
+        "type": "double",
+        "pii": false
+      },
+      {
+        "name": "submission_rate_pct",
+        "type": "decimal(27,2)",
+        "pii": false
+      },
+      {
+        "name": "on_time_rate_pct",
+        "type": "decimal(27,2)",
+        "pii": false
+      },
+      {
+        "name": "_refreshed_at",
+        "type": "timestamp",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "gold_student_overdue_metrics",
+    "layer": "gold",
+    "sensitivity": "Confidential",
+    "pii_columns": "first_name,last_name",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 60,
+    "columns": [
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "last_name",
+        "type": "string",
+        "pii": true
+      },
+      {
+        "name": "assignments_total",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "assignments_due",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "assignments_submitted",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "overdue_assignment_count",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "late_submission_count",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "max_days_overdue",
+        "type": "int",
+        "pii": false
+      },
+      {
+        "name": "risk_band",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "_refreshed_at",
+        "type": "timestamp",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "gold_assignment_summary",
+    "layer": "gold",
+    "sensitivity": "General",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 15,
+    "columns": [
+      {
+        "name": "assignment_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "course_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "due_at",
+        "type": "timestamp",
+        "pii": false
+      },
+      {
+        "name": "students_assigned",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "submitted",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "not_submitted",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "late",
+        "type": "bigint",
+        "pii": false
+      },
+      {
+        "name": "submission_rate_pct",
+        "type": "decimal(27,2)",
+        "pii": false
+      },
+      {
+        "name": "avg_score",
+        "type": "double",
+        "pii": false
+      },
+      {
+        "name": "is_due",
+        "type": "boolean",
+        "pii": false
+      },
+      {
+        "name": "_refreshed_at",
+        "type": "timestamp",
+        "pii": false
+      }
+    ]
+  },
+  {
+    "table": "gold_dim_student",
+    "layer": "gold",
+    "sensitivity": "Confidential (masked)",
+    "pii_columns": "",
+    "data_owner": "data-engineering@university.edu",
+    "domain": "education.assignments",
+    "row_count": 60,
+    "columns": [
+      {
+        "name": "student_key",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "student_id",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "first_name",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "last_name",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "date_of_birth",
+        "type": "string",
+        "pii": false
+      },
+      {
+        "name": "enrollment_date",
+        "type": "date",
+        "pii": false
+      }
+    ]
+  }
+]

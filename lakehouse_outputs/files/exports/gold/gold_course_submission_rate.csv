@@ -1,0 +1,6 @@
+course_id,course_name,department,instructor,enrolled_students,assignments_due,expected_submissions,actual_submissions,on_time_submissions,late_submissions,missing_submissions,avg_score,submission_rate_pct,on_time_rate_pct,_refreshed_at
+C004,Cloud Architecture on Azure,Information Systems,Dr. Priya Nair,31,2,62,53,48,5,9,78.2,85.48,77.42,2026-10-22 19:55:37.544050
+C001,Data Engineering Fundamentals,Computer Science,Dr. Ayesha Khan,38,2,76,56,45,11,20,78.37,73.68,59.21,2026-10-22 19:55:37.544050
+C002,Machine Learning I,Computer Science,Dr. Layla Haddad,25,2,50,41,33,8,9,78.58,82.00,66.00,2026-10-22 19:55:37.544050
+C005,Business Intelligence & Visualisation,Business,Prof. Daniel Okafor,29,1,29,19,15,4,10,77.71,65.52,51.72,2026-10-22 19:55:37.544050
+C003,Statistics for Analytics,Mathematics,Prof. Marco Rossi,29,2,58,49,43,6,9,78.32,84.48,74.14,2026-10-22 19:55:37.544050

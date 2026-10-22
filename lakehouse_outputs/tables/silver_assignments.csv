@@ -1,0 +1,16 @@
+course_id,assignment_id,title,due_at,max_score
+C001,Assignment_101,Lab 1,2026-09-20 23:59:00,100
+C001,Assignment_102,Project Milestone 2,2026-10-04 23:59:00,100
+C001,Assignment_103,Final Project 3,2026-10-25 23:59:00,100
+C002,Assignment_201,Lab 1,2026-09-23 23:59:00,100
+C002,Assignment_202,Project Milestone 2,2026-10-07 23:59:00,100
+C002,Assignment_203,Final Project 3,2026-10-28 23:59:00,100
+C003,Assignment_301,Lab 1,2026-09-26 23:59:00,100
+C003,Assignment_302,Project Milestone 2,2026-10-10 23:59:00,100
+C003,Assignment_303,Final Project 3,2026-10-31 23:59:00,100
+C004,Assignment_401,Lab 1,2026-09-29 23:59:00,100
+C004,Assignment_402,Project Milestone 2,2026-10-13 23:59:00,100
+C004,Assignment_403,Final Project 3,2026-11-03 23:59:00,100
+C005,Assignment_501,Lab 1,2026-10-02 23:59:00,100
+C005,Assignment_502,Project Milestone 2,2026-10-16 23:59:00,100
+C005,Assignment_503,Final Project 3,2026-11-06 23:59:00,100
